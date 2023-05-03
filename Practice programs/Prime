@@ -1,0 +1,15 @@
+num = int(input("Enter a number to tell if it is prime or not..."))
+
+if num > 1 and num in [2,3]:
+    print("This is prime.")
+else:
+    for i in range(2,(num//2+1)):
+        if num%i == 0:
+            print("This is not a prime.")
+            break
+        else:
+            pass
+    else:
+        print("This is a prime number..." )
+
+print(__name__)
